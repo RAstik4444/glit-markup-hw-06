@@ -13,7 +13,9 @@ body {
     --white-background-color: #ffffff;
     --white-button-color: #e7e9fc;
     --modal-background: #fcfcfc;
-
+    --section-fife: #8e8f99;
+    --color-logo: #4d5ae5;
+    --color-menu-p: #404BBF;
 }
 
 h1,
@@ -654,6 +656,126 @@ h3 {
 .social-footer-ul {
     gap: 16px;
     display: flex;
+}
+
+.div-modal-form {
+    margin-bottom: 8px;
+}
+
+.label-modal {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--section-fife);
+    display: block;
+    margin-bottom: 4px;
+}
+
+.div-label-modal {
+    position: relative;
+}
+
+.input-modal {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding-left: 38px;
+    outline: transparent;
+}
+
+.input-modal:focus {
+    border-color: #4D5AE5;
+}
+
+.input-modal:focus+svg {
+    fill: #4D5AE5;
+}
+
+.svg-modal {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-div-four {
+    margin-bottom: 16px;
+}
+
+.textarea-modal {
+    width: 100%;
+    height: 120px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 8px 16px;
+    outline: transparent;
+    resize: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textarea-modal:focus {
+    border-color: #4D5AE5;
+}
+
+.div-modal-fife {
+    margin-bottom: 24px;
+}
+
+.label-modal-two {
+    display: block;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--section-fife);
+}
+
+.span-label {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+}
+
+.link-modal {
+    color: var(--color-logo);
+}
+
+.button-modal-six {
+    display: block;
+    margin: 0 auto;
+    min-width: 169px;
+    height: 56px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-check:checked+.label-modal-two span {
+    background-color: var(--color-menu-p);
+    fill: #f4f4fd;
+    border: none;
 }
 
 .our-team-li {
