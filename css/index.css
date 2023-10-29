@@ -845,6 +845,10 @@ p.paragraf-botom {
     padding: 72px 24px 24px;
 }
 
+.svg-modal-three {
+    color: var(--dark-color)
+}
+
 .close-btn {
     position: absolute;
     cursor: pointer;
